@@ -1,0 +1,167 @@
+
+span {
+   font-weight: 700;
+}
+
+.border-top {
+   padding-top: 0.5rem;
+   border-top: 1px solid rgb(154, 154, 154);
+}
+
+.mainprofilecontainer {
+   font-size: larger;
+   display: flex;
+   padding: 1rem;
+}
+
+.sidepanel {
+   padding: 14rem 2rem;
+   background-color: rgb(62,86,200);
+   border-radius: 2rem;
+   flex: 18%;
+   color: aliceblue;
+   font-weight: 500;
+}
+
+.sidepanel-item {
+   border-bottom: 1px solid white;
+   margin-top: 2rem;
+   color: gray;
+}
+
+.activetab {
+   color: white;
+}
+
+.profilecontainer {
+   margin: 0.5rem;
+   flex: 82%;
+}
+
+.profilecontainer-heading {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid black;
+   margin-bottom: 1.5rem;
+}
+
+.profilecontainer-heading-item {
+   display: flex;
+   align-items: center;
+}
+
+.profilecontainer-heading-item .smallpic {
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   margin-right: 1rem;
+}
+
+.profilecontainer-profile {
+   display: flex;
+   justify-content: space-evenly;
+
+}
+
+.profilecontainer-profile-left {
+   border-right: 1px solid rgb(154, 154, 154);
+}
+.profilecontainer-profile-left div{
+   margin: 1rem;
+}
+
+.profilecontainer-profile-left img {
+   width: 15rem;
+   border-radius: 50%;
+}
+
+.profilecontainer-profile-right div{
+   margin: 1rem;
+}
+
+.profilecontainer-profile-right img {
+   width: 30rem;
+   border-radius: 2rem;
+}
+
+.popout {
+   display: none;
+   color: black;
+   position: absolute;
+   width: 15rem;
+   height: 20rem;
+   padding: 2rem;
+   border-radius: 2rem;
+   top: 4rem;
+   right: 3rem;
+   text-align: center;
+   box-shadow: 5px 10px 20px 1px #888888;
+   background-color: whitesmoke;
+}
+
+.popout span {
+   font-weight: 500;
+   color: gray;
+}
+
+.mainprofilepic {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+}
+
+.otheruser {
+   display: flex;
+   border-top: 1px solid rgb(154, 154, 154);
+   margin: 0.5rem 0rem;
+   padding: 0.5rem;
+}
+
+.signoutbtn {
+   padding: 0.5rem;
+   color: white;
+   border-radius: 2rem;
+   background-color: rgb(213,81,81);
+}
+
+.chatpopup {
+   position: absolute;
+   right: 2rem;
+   bottom: 1rem;
+   width: 15rem;
+   color: white;
+   background-color: white;
+   border: 1px solid rgb(44,101,200);
+   border-radius: 1rem;
+
+}
+
+.chatpopup-heading {
+   background-color: rgb(44,101,200);
+   padding: 1rem;
+   border-radius: 1rem 1rem 1rem 1rem;
+
+}
+
+.chatpopup-item {
+   align-items: center;
+   padding: 0.3rem;
+   display: flex;
+   color: rgb(79, 79, 79);
+   font-size: 1.1rem;
+
+}
+
+.chatpopup-item img {
+   margin-right: 0.3rem;
+   width: 2rem;
+   border-radius: 50%;
+}
+
+.chatpopup-circle {
+   margin-left: 1rem;
+   width: 0.5rem;
+   height: 0.5rem;
+   background-color: green;
+   border-radius: 50%;
+}

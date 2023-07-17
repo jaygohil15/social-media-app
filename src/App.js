@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { useEffect, useState } from 'react';
+import HomePage from './HomePage';
+import ProfilePage from './ProfilePage';
 
 function App() {
+  const [users, setUsers] = useState(null);
+  const [profilepage, setProfilepage] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    fetch('https://panorbit.in/api/users.json').then(res => res.json())
+      .then(data => {
+        console.log(data.users)
+        setUsers(data.users)
+      })
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {
+        profilepage ? <ProfilePage user={currentUser} users={users} setProfilepage={setProfilepage} /> : <HomePage users={users} setProfilepage={setProfilepage} setCurrentUser={setCurrentUser} />
+      }
+    </>
   );
 }
 
